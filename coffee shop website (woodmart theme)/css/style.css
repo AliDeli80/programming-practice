@@ -1,0 +1,494 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Vazirmatn, sans-serif;
+    margin: 0;
+    direction: rtl;
+    background-color: #f9f9ff;
+}
+
+/* the nav section style */
+
+#header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.header-nav_siteicon {
+    padding-right: 50px;
+}
+
+.header-nav_siteicon .bi-cup-hot-fill {
+    font-size: 50px;
+    color: black;
+}
+
+.header-nav_siteicon a {
+    text-decoration: none;
+}
+
+.header-nav_buttons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar  a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+.nav-bar a:hover {
+    color: green;
+}
+
+.nav-bar a.active {
+    color: green;
+}
+
+.nav-bar li {
+    margin-left: 20px;
+}
+
+
+
+.nav-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.nav-button i {
+    font-size: 20px;
+}
+
+.heart-button i:hover {
+    color: red;
+}
+
+.shuffle-button i:hover {
+    color: green;
+}
+
+.cart-button i:hover {
+    color: rgb(146, 45, 45);
+}
+
+.header-head-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 100px 50px;
+    background-image: url(../img/wd-coffee-slide-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-head-content h2 {
+    width: 575px;
+    font-size: 45px;
+    color: #114639;
+    text-align: right;
+}
+
+.header-head-content p {
+    width: 675px;
+    color: rgb(61, 61, 61);
+    text-align: center;
+}
+
+.header-head-content button {
+    border: 1px solid darkgray;
+    background-color: transparent;
+    width: 115px;
+    height: 45px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.header-head-content button:hover {
+    background-color: darkgray;
+}
+
+.header-head-content_button {
+    width: 420px;
+}
+
+/* main section style */
+
+#main-section {
+    background-color: #f3f3f3;
+    padding: 1px;
+}
+
+.sell-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.sell-section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sell-section_content h2 {
+    color: #114639;
+    font-size: xx-large;
+    margin-bottom: 0;
+}
+
+.sell-section_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.sell-section_menu a {
+    text-decoration: none;
+    color: rgb(135, 135, 135);
+    font-size: bold;
+    padding: 0 20px;
+}
+
+.sell-section_menu li {
+    font-size: larger;
+}
+
+.sell-section_menu li.active {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.sell-section_menu li:hover {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.sell-section_products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sell-section_products .sell-section_products_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: auto;
+}
+
+.sell-section_products a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    width: 100%;
+}
+
+.sell-section_products img {
+    width: 100%;
+}
+
+.sell-section_products_discount {
+    top: 0;
+    right: 0;
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background-color: green;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sell-section_products p {
+    margin: 0;
+}
+
+.sell-section_products del {
+    font-weight: 100;
+    color: gray;
+}
+
+.sell-section_products_shortcuts {
+    display: flex;
+    position: absolute;
+    width: 150px;
+    bottom: 60px;
+    height: 35px;
+    background-color: white;
+}
+
+.sell-section_products_shortcuts a {
+    font-size: larger;
+    padding: 5px;
+}
+
+.sell-section_products_shortcuts a:hover {
+    color: gray;
+}
+
+.coffee-shop_discription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.coffee-shop_discription_location {
+    position: relative;
+}
+
+.coffee-shop_discription_location .image-descriptio {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    background-color: #f3f3f3;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.coffee-shop_discription_location .image-descriptio h3 {
+    font-size: xx-large;
+    font-weight: 500;
+    margin: 20px 20px 0;
+    color: #114639;
+}
+
+.coffee-shop_discription_location .image-descriptio p {
+    margin: 10px 20px 0;
+    font-weight: 300;
+}
+
+.coffee-shop_discription_location .image-descriptio a {
+    color: black;
+    font-weight: 600;
+    margin: 10px 20px 20px 10px;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+.coffee-shop_discription_location .image-descriptio a:hover {
+    color: gray;
+    border-bottom: 2px solid gray;
+}
+
+.coffee-shop_discription_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.coffee-shop_discription_content h3 {
+    font-size: xx-large;
+    font-weight: 500;
+    margin: 0;
+    color: #114639;
+}
+
+.coffee-shop_discription_content p {
+    margin: 0;
+    font-weight: 300;
+}
+
+.coffee-shop_discription_content a {
+    color: black;
+    font-weight: 600;
+    margin: 25px 0;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+.coffee-shop_discription_content a:hover {
+    color: gray;
+    border-bottom: 2px solid gray;
+}
+
+.about-our-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.our-work-description {
+    margin-left: 300px;
+}
+
+.our-work-description h3 {
+    font-size: 3em;
+    font-weight: 500;
+    margin: 0;
+    color: #114639;
+}
+
+.our-work-description p {
+    margin: 0;
+    font-weight: 300;
+    width: 500px;
+}
+
+.our-work-description button {
+    width: 115px;
+    height: 45px;
+    border: none;
+    background-color: #114639;
+    margin: 35px 0;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+    cursor: pointer;
+}   
+
+.our-work-description button:hover {
+    color: #114639;
+    border: 1px solid #114639;
+    background-color: #f3f3f3;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.about-us_description {
+    margin-right: 200px;
+    margin-left: 100px;
+    width: 700px;
+}
+
+.about-us_description h3 {
+    font-size: 3em;
+    font-weight: 500;
+    margin: 0;
+    color: #114639;
+}
+
+.about-us_description p {
+    margin: 0;
+    font-weight: 300;
+}
+
+.about-us_description button {
+    width: 115px;
+    height: 45px;
+    border: none;
+    background-color: #114639;
+    margin: 35px 0;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.about-us_description button:hover {
+    color: #114639;
+    border: 1px solid #114639;
+    background-color: #f3f3f3;
+}
+
+.coffee-image {
+margin-right: 300px;
+}
+
+/* footer section style */
+
+#footer {
+    background-color: black;
+    padding: 1px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+
+#footer div {
+    margin: 20px 0;
+}
+
+.about-us-footer , .contact , .our-shops h4 {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.about-us-footer li {
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.about-us-footer li:hover {
+    color: lightgray;
+}
+
+.our-phone-number {
+    font-size: large;
+    font-weight: 500;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i {
+    font-size: 2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.social .bi-pinterest:hover , .bi-instagram:hover {
+    color: red;
+}
+
+.social .bi-twitter:hover , .bi-telegram:hover {
+    color: lightskyblue;
+}

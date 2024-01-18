@@ -1,0 +1,21 @@
+body {
+    font-family: Vazirmatn, sans-serif;
+    margin: 0;
+}
+
+html {
+    color: black;
+    font-family: 'Vazir' , serif;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 5rem;
+}
+
